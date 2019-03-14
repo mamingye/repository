@@ -1,6 +1,8 @@
 ##usage:cscript zip.vbs target.zip sourceFile1 sourceDir2 
+##author2:Ma.m.y
 Set objArgs = WScript.Arguments
 ZipFile = objArgs(0)
+ZipFile1 = objArgs(0)
 
 ' Create empty ZIP file and open for adding
 CreateObject("Scripting.FileSystemObject").CreateTextFile(ZipFile, True).Write "PK" & Chr(5) & Chr(6) & String(18, vbNullChar)
